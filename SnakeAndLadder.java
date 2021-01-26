@@ -5,6 +5,7 @@ public class SnakeAndLadder {
     private void play(){
         int position =0;
         int count =0;
+			while(position != 100){
             int dice=(int)(Math.floor(Math.random() * 10 % 6 + 1));
             System.out.println("Rolling a dice  :" +dice);
             int diceCheck = (int) (Math.random()* dice % 3);
@@ -31,7 +32,8 @@ public class SnakeAndLadder {
             else{
                 System.out.println("game is over");
             }
-            }
+         }
+	}
     public static void main(String[] args) {
         SnakeAndLadder game = new SnakeAndLadder();
         game.play();
