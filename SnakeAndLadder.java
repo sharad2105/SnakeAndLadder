@@ -15,18 +15,21 @@ public class SnakeAndLadder {
             if(diceCheck == 0 ){
                 System.out.println("Player is the Same Position..........");
                 count = count+1;
+					 System.out.println("Position Of Player is.." + position);
 
             }
 
             else if(diceCheck == 1){
                 System.out.println("player move ahead its Ladder.......");
                 position = position+dice;
+					 System.out.println("Position Of Player is.." + position);
 					 count = count+1;
             }
 
             else if(diceCheck == 2){
                 System.out.println("player move behind Snake");
                 position = position-dice;
+					 System.out.println("Position Of Player is.." + position);
 
             }
             else{
